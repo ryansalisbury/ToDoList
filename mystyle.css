@@ -13,6 +13,9 @@ body{
   cursor: pointer;
   margin-top:35px;
 }
+#todos {
+  color: white;
+}
 
 .remove{
   margin-top: 13px;

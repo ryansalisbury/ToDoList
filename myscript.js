@@ -44,7 +44,7 @@ function add(){
 /**Will clear input from input box*/
 function clearDefault(a){
   if (a.defaultValue == a.value) {a.value=""}
-}
+};
 
 
 /*will remove task from to do list when user clicks a button*/
@@ -72,7 +72,7 @@ function show(){
   var html = '<ul>';
 
   for(var i=0; i<todos.length;i++){
-    html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">HELLOOOO</button> </li>"';
+    html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">Delete</button> </li>';
   };
 
   html += '</ul>'
@@ -83,12 +83,10 @@ function show(){
 
   /**Sets up event so when a the remove button is clicked it will call the remove method */
   var buttons = document.getElementsByClassName('remove');
-  for(vari=0; i<buttons.length;i++){
+  for(var i=0; i<buttons.length; i++){
     buttons[i].addEventListener('click', remove);
   }
-
 }
-
 
 document.getElementById('add').addEventListener('click', add);
 show();
